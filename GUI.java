@@ -9,6 +9,8 @@ class GUI extends JFrame{
 		super("LifeYears");
 		setSize(frameW+8,frameH+64);
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		ImageIcon icon = new ImageIcon("icon.png");
+		setIconImage(icon.getImage());
 		setLayout(null);
 		
 		ImageIcon green = new ImageIcon("green.png");
