@@ -5,9 +5,9 @@ import java.awt.event.*;
 class GUI extends JFrame{
 	final int frameW = 480;
 	final int frameH = 480;
-	static ImageIcon icon = new ImageIcon("icon.png");
-	static ImageIcon green = new ImageIcon("green.png");
-	static ImageIcon greenT = new ImageIcon("green_trail.png");
+	static ImageIcon icon = new ImageIcon("assets/icon.png");
+	static ImageIcon green = new ImageIcon("assets/green.png");
+	static ImageIcon greenT = new ImageIcon("assets/green_trail.png");
 	GUI(){
 		super("LifeYears");
 		setIconImage(icon.getImage());
