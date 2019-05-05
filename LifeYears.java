@@ -4,6 +4,9 @@ class LifeYears{
 		Scanner sc = new Scanner(System.in);
 		System.out.printf("Enter your date of birth (DD MM YYYY): ");
 		String[] dob_tokens = sc.nextLine().split("[ /.]+");
+		GUI gui = new GUI(calculate(dob_tokens));
+	}
+	static int calculate(String[] dob_tokens){
 		Calendar currentInstance = Calendar.getInstance();
 		Calendar dobInstance = Calendar.getInstance();
 		dobInstance.set(Integer.parseInt(dob_tokens[2])
@@ -24,6 +27,6 @@ class LifeYears{
 			System.exit(1);
 		}
 		System.out.printf("No. of Years: %d\n",years);
-		GUI gui = new GUI(years);
+		return years;
 	}
 }
