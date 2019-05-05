@@ -18,6 +18,12 @@ class LifeYears{
 			years++;
 			dobInstance.add(Calendar.YEAR,1);
 		}
-		System.out.println(years);
+		years--;
+		if(years>100){
+			System.out.println("You are more than 100 years old!");
+			System.exit(1);
+		}
+		System.out.printf("No. of Years: %d\n",years);
+		GUI gui = new GUI(years);
 	}
 }
