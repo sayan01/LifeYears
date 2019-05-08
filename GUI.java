@@ -50,7 +50,7 @@ class GUI extends JFrame{
 		if(input == null){
 			System.exit(-1);
 		}
-		String[] dob_tokens = input.split("[ /.]+");
+		String[] dob_tokens = input.split("[ /-.]+");
 		gui.set(LifeYears.calculate(dob_tokens));
 	}
 }
