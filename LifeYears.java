@@ -3,7 +3,7 @@ class LifeYears{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.printf("Enter your date of birth (DD MM YYYY): ");
-		String[] dob_tokens = sc.nextLine().split("[ /-.]+");
+		String[] dob_tokens = sc.nextLine().split("[ /.-]+");
 		GUI gui = new GUI(calculate(dob_tokens));
 	}
 	static int calculate(String[] dob_tokens){
