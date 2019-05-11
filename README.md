@@ -1,7 +1,8 @@
 # LifeYears
 A program to show user's life in block of years.
-#### The application can be run by either:
+#### The application can be run by doing any ONE of the following:
 
+- running `./Run-LifeYears.sh` (Linux) or `Run-LifeYears.bat` (Windows)
 - running `java GUI` : this runs the application in full GUI mode, even the input of DOB is graphical
 - running `java LifeYears` : this takes the input of DOB through terminal and after a valid input shows the year blocks in GUI.
 
